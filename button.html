@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ElementUI ｜ Button</title>
+    <link rel="stylesheet" href="style/variables.css" />
+    <link rel="stylesheet" href="style/element-ui-icon.css" />
+    <style>
+      body,
+      html {
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        padding: 50px 20px 0;
+      }
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-weight: 400;
+        color: #1f2f3d;
+      }
+      h2 {
+        font-size: 28px;
+        margin: 0;
+      }
+      h3 {
+        font-size: 22px;
+      }
+      body h3:first-of-type {
+        margin: 55px 0 20px;
+      }
+      el-button {
+        margin: 0 10px 15px 0;
+      }
+
+      p {
+        font-size: 14px;
+        color: #5e6d82;
+        line-height: 1.5em;
+      }
+      .demo-block {
+        border: 1px solid #ebebeb;
+        border-radius: 3px;
+        margin-bottom: 24px;
+        padding: 24px;
+      }
+      .demo-block .row {
+        margin-bottom: 20px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        background-color: var(--color-white);
+        font-size: 14px;
+        margin-bottom: 45px;
+        line-height: 1.5em;
+      }
+      table th {
+        text-align: left;
+        white-space: nowrap;
+        color: var(--color-text-secondary);
+        font-weight: 400;
+        border-bottom: 1px solid var(--border-color-base);
+        padding: 15px;
+        max-width: 250px;
+      }
+      table td {
+        border-bottom: 1px solid var(--border-color-base);
+        padding: 15px;
+        max-width: 250px;
+        color: var(--color-text-regular);
+      }
+      table th:first-child,
+      table td:first-child {
+        padding-left: 10px;
+      }
+    </style>
+    <script type="module" src="./components/el-button.js"></script>
+  </head>
+
+  <body>
+    <h2>Button 按钮</h2>
+    <p>常用的操作按钮。</p>
+    <h3>基础用法</h3>
+    <p>基础的按钮用法</p>
+    <div class="demo-block">
+      <div class="row">
+        <el-button>默认按钮</el-button>
+        <el-button type="primary">主要按钮</el-button>
+        <el-button type="success">成功按钮</el-button>
+        <el-button type="info">信息按钮</el-button>
+        <el-button type="warning">警告按钮</el-button>
+        <el-button type="danger">危险按钮</el-button>
+      </div>
+      <div class="row">
+        <el-button plain>朴素按钮</el-button>
+        <el-button type="primary" plain>主要按钮</el-button>
+        <el-button type="success" plain>成功按钮</el-button>
+        <el-button type="info" plain>信息按钮</el-button>
+        <el-button type="warning" plain>警告按钮</el-button>
+        <el-button type="danger" plain>危险按钮</el-button>
+      </div>
+      <div class="row">
+        <el-button plain>朴素按钮</el-button>
+        <el-button type="primary" plain>主要按钮</el-button>
+        <el-button type="success" plain>成功按钮</el-button>
+        <el-button type="info" plain>信息按钮</el-button>
+        <el-button type="warning" plain>警告按钮</el-button>
+        <el-button type="danger" plain>危险按钮</el-button>
+      </div>
+      <div class="row">
+        <el-button round>圆角按钮</el-button>
+        <el-button type="primary" round>主要按钮</el-button>
+        <el-button type="success" round>成功按钮</el-button>
+        <el-button type="info" round>信息按钮</el-button>
+        <el-button type="warning" round>警告按钮</el-button>
+        <el-button type="danger" round>危险按钮</el-button>
+      </div>
+      <div class="row">
+        <el-button icon="el-icon-search" circle></el-button>
+        <el-button type="primary" icon="el-icon-edit" circle></el-button>
+        <el-button type="success" icon="el-icon-check" circle></el-button>
+        <el-button type="info" icon="el-icon-message" circle></el-button>
+        <el-button type="warning" icon="el-icon-star-off" circle></el-button>
+        <el-button type="danger" icon="el-icon-delete" circle></el-button>
+      </div>
+    </div>
+    <h3>禁用状态</h3>
+    <p>按钮不可用状态</p>
+    <div class="demo-block">
+      <div class="row">
+        <el-button disabled>默认按钮</el-button>
+        <el-button type="primary" disabled>主要按钮</el-button>
+        <el-button type="success" disabled>成功按钮</el-button>
+        <el-button type="info" disabled>信息按钮</el-button>
+        <el-button type="warning" disabled>警告按钮</el-button>
+        <el-button type="danger" disabled>危险按钮</el-button>
+      </div>
+      <div class="row">
+        <el-button plain disabled>朴素按钮</el-button>
+        <el-button type="primary" plain disabled>主要按钮</el-button>
+        <el-button type="success" plain disabled>成功按钮</el-button>
+        <el-button type="info" plain disabled>信息按钮</el-button>
+        <el-button type="warning" plain disabled>警告按钮</el-button>
+        <el-button type="danger" plain disabled>危险按钮</el-button>
+      </div>
+    </div>
+    <h3>文字按钮</h3>
+    <p>没有边框和背景色的按钮</p>
+    <div class="demo-block">
+      <div class="row">
+        <el-button type="text">文字按钮</el-button>
+        <el-button type="text" disabled>文字按钮</el-button>
+      </div>
+    </div>
+    <h3>图标按钮</h3>
+    <p>带图标的按钮可增强辨识度（有文字）或节省空间（无文字）。</p>
+    <div class="demo-block">
+      <div class="row">
+        <el-button type="primary" icon="el-icon-edit"></el-button>
+        <el-button type="primary" icon="el-icon-share"></el-button>
+        <el-button type="primary" icon="el-icon-delete"></el-button>
+        <el-button type="primary" icon="el-icon-search">搜索</el-button>
+        <el-button type="primary"
+          >上传<i class="el-icon-upload el-icon--right"></i
+        ></el-button>
+      </div>
+    </div>
+    <h3>加载中</h3>
+    <p>点击按钮后进行数据加载操作，在按钮上显示加载状态。</p>
+    <div class="demo-block">
+      <div class="row">
+        <el-button type="primary" loading>加载中</el-button>
+      </div>
+    </div>
+    <h3>不同尺寸</h3>
+    <p>
+      Button
+      组件提供除了默认值以外的三种尺寸，可以在不同场景下选择合适的按钮尺寸。
+    </p>
+    <div class="demo-block">
+      <div class="row">
+        <el-button>默认按钮</el-button>
+        <el-button size="medium">中等按钮</el-button>
+        <el-button size="small">小型按钮</el-button>
+        <el-button size="mini">超小按钮</el-button>
+      </div>
+      <div class="row">
+        <el-button round>默认按钮</el-button>
+        <el-button size="medium" round>中等按钮</el-button>
+        <el-button size="small" round>小型按钮</el-button>
+        <el-button size="mini" round>超小按钮</el-button>
+      </div>
+    </div>
+    <h3>Attributes</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>参数</th>
+          <th>说明</th>
+          <th>类型</th>
+          <th>可选值</th>
+          <th>默认值</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>size</td>
+          <td>尺寸</td>
+          <td>string</td>
+          <td>medium / small / mini</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>type</td>
+          <td>类型</td>
+          <td>string</td>
+          <td>primary / success / warning / danger / info / text</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>plain</td>
+          <td>是否朴素按钮</td>
+          <td>boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>round</td>
+          <td>是否圆角按钮</td>
+          <td>boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>circle</td>
+          <td>是否圆形按钮</td>
+          <td>boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>loading</td>
+          <td>是否加载中状态</td>
+          <td>boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>disabled</td>
+          <td>是否禁用状态</td>
+          <td>boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>icon</td>
+          <td>图标类名</td>
+          <td>string</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+:root {
+  /* 主题色 */
+  --color-primary: #409eff;
+  /* 成功颜色 */
+  --color-success: #67c23a;
+  /* 警告颜色 */
+  --color-warning: #e6a23c;
+  /* 危险颜色 */
+  --color-danger: #f56c6c;
+  /* 信息颜色 */
+  --color-info: #909399;
+  /* 基础白色 */
+  --color-white: #ffffff;
+  /* 基础黑色 */
+  --color-black: #000000;
+  /* 基础背景色 */
+  --background-color-base: #f5f7fa;
+  /* 一级边框颜色 */
+  --border-color-base: #dcdfe6;
+  /* 二级边框颜色 */
+  --border-color-light: #e4e7ed;
+  /* 三级边框颜色 */
+  --border-color-lighter: #ebeef5;
+  /* 四级边框颜色 */
+  --border-color-extra-light: #f2f6fc;
+  /* 主要文字颜色 */
+  --color-text-primary: #303133;
+  /* 常规文字颜色 */
+  --color-text-regular: #606266;
+  /* 次要文字颜色 */
+  --color-text-secondary: #909399;
+  /* 占位文字颜色 */
+  --color-text-placeholder: #c0c4cc;
+}
